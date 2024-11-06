@@ -1,0 +1,58 @@
+/* Styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #121212; /* Fond sombre */
+  color: #e0e0e0; /* Couleur du texte clair */
+}
+
+/* Styles pour le composant */
+.currentTime {
+  display: flex;
+  flex-direction: column;
+  align-items: flex;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1f1f1f; /* Couleur de fond sombre pour le composant */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 15px;
+}
+
+.currentTime__title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #a0a0a0; /* Couleur gris clair pour le titre */
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.currentTime__time {
+  font-size: 2.5em; /* Taille plus grande pour l'heure */
+  color: #4db6ff; /* Bleu lumineux pour l’heure */
+  font-weight: 600;
+}
+
+/* Effet de surbrillance au survol */
+.currentTime:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsivité */
+@media (max-width: 600px) {
+  .currentTime {
+    width: 100%;
+    max-width: 90%;
+    padding: 25px;
+  }
+}
